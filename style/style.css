@@ -1,0 +1,74 @@
+::-webkit-scrollbar {
+    width: 2px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1e293b;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: grey;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+    margin: 0;
+}
+.navbar-container{
+    z-index: 100;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+}
+
+.section-1{
+    background: linear-gradient(to top, rgba(51, 65, 85, 1) 1%, rgba(15, 23, 42, 1)10%);
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    -webkit-transform: translateY(20px);
+    -moz-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    -o-transform: translateY(20px);
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.section-3{
+    background: linear-gradient(to bottom, rgba(51, 65, 85, 1)1%, rgba(15, 23, 42, 1) 10%);
+   
+}
+
+.about-me {
+    padding: 0.5rem;
+    background: linear-gradient(to left, transparent 50%, rgb(15, 23, 42) 50%);
+    background-size: 200% 100%;
+    background-position: right;
+    transition: background-position 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    -webkit-transition: background-position 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    -moz-transition: background-position 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    -ms-transition: background-position 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    -o-transition: background-position 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+  
+  .about-me:hover {
+    color: rgb(255, 255, 255);
+    background-position: left;
+    cursor: default;
+  }
