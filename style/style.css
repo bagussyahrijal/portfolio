@@ -55,7 +55,7 @@ body{
    
 }
 
-.about-me {
+/* .about-me {
     padding: 0.5rem;
     background: linear-gradient(to left, transparent 50%, rgb(15, 23, 42) 50%);
     background-size: 200% 100%;
@@ -69,6 +69,24 @@ body{
   
   .about-me:hover {
     color: rgb(255, 255, 255);
+    background-position: left;
+    cursor: default;
+  } */
+
+  .my-project{
+    padding: 0.5rem;
+    background: linear-gradient(to left, transparent 50%, rgb(255, 255, 255) 50%);
+    background-size: 200% 100%;
+    background-position: right;
+    transition: background-position 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    -webkit-transition: background-position 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    -moz-transition: background-position 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    -ms-transition: background-position 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    -o-transition: background-position 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .my-project:hover {
+    color: rgb(15, 23, 42);
     background-position: left;
     cursor: default;
   }
