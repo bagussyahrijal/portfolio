@@ -9,15 +9,15 @@
     <link rel="stylesheet" href="./style/style.css">
 </head>
 
-<body>
+<body class="animate-gradient bg-gradient-to-r from-slate-900 via-slate-800 to-slate-700">
     <!-- Navbar Start -->
     <header>
         <nav class="navbar-container fixed h-[10vh] bg-slate-900 w-full">
-            <div class="flex justify-center items-center h-full">
-                <ul class="flex flex-row justify-center items-center text-white">
-                    <li class="mx-2"><a href="#">Home</a></li>
-                    <li class="mx-2"><a href="#">Contact</a></li>
-                    <li class="mx-2"><a href="#">Portfolio</a></li>
+            <div class="flex justify-start ml-24 items-center h-full">
+                <ul class="text-white">
+                    <li class="mx-2 li-navbar"><a class="a-navbar" id="a-navbar" href="#">Home</a></li>
+                    <li class="mx-2 li-navbar"><a class="a-navbar" id="a-navbar" onclick="scrollToWhere('section-2')">About Me</a></li>
+                    <li class="mx-2 li-navbar"><a class="a-navbar" id="a-navbar" onclick="scrollToWhere('section-3')">Portfolio</a></li>
                 </ul>
             </div>
         </nav>
@@ -32,26 +32,26 @@
             class=" section-1 flex flex-col justify-center items-center w-[100vw] h-[110vh] opacity-0 translate-y-5 transition duration-1000 ease-out delay-300">
             <div
                 class="flex flex-col items-center justify-center opacity-0 translate-y-5 transition duration-1000 ease-out delay-400">
-                <h1
-                    class="font-mono text-4xl md:text-5xl text-white text-center drop-shadow-[0_0_30px_rgba(255,255,255,0.5)]">
+                <h1 id="color-effect"
+                    class="h1-section1 font-mono text-4xl md:text-5xl text-white text-center drop-shadow-[0_0_30px_rgba(255,255,255,1)]">
                     Hi, I
                     Am Tubagus Syahrijal Amri <br> You can call me Tebe.</h1>
-                <p class="font-mono text-white text-center mt-2 drop-shadow-[0_0_30px_rgba(255,255,255,0.5)]">I am a
-                    front-end web
-                    developer, coding enthusiast, and love to learn about technology.</p>
+                <p id="typing-effect" class="font-mono text-white text-center mt-2 drop-shadow-[0_0_30px_rgba(255,255,255,1)]"></p>
             </div>
             <div class="flex flex-row gap-5 mt-7 opacity-0 translate-y-5 transition duration-1000 ease-out delay-500">
                 <img class="h-10" src="./assets/html.svg" alt="HTML">
                 <img class="h-10" src="./assets/css.svg" alt="CSS">
                 <img class="h-10" src="./assets/js.svg" alt="JS">
-                <img class="h-10" src="./assets/react.svg" alt="REACT">
                 <img class="h-9 mt-1" src="./assets/tailwind.svg" alt="TAILWIND">
                 <img class="h-10 mt-1" src="./assets/bootstrap.svg" alt="BOOTSTRAP">
+                <img class="h-10 mt-1" src="./assets/vue.svg" alt="VUE">
+                <img class="h-10 mt-1" src="./assets/react.svg" alt="REACT">
+                <img class="h-10 mt-1" src="./assets/laravel.svg" alt="LARAVEL">
             </div>
             <div class="mt-7 opacity-0 translate-y-5 transition duration-1000 ease-out delay-600">
-                <a href="#" class="text-white hover:text-blue-500 transition delay-50 duration-150 ease-in-out">--&rarr;
+                <a onclick="scrollToWhere('section-3')" class="a-navbar text-white hover:text-blue-500 transition delay-50 duration-150 ease-in-out">--&rarr;
                     <span class="underline underline-offset-1">See my project</span></a>
-                <a href="#" class="text-white hover:text-blue-500 transition delay-50 duration-150 ease-in-out">--&rarr;
+                <a onclick="scrollToWhere('section-2')" class="a-navbar text-white hover:text-blue-500 transition delay-50 duration-150 ease-in-out">--&rarr;
                     <span class="underline underline-offset-1">About Me</span></a>
             </div>
         </section>
@@ -59,13 +59,13 @@
 
         <!-- Section 2 Start -->
         <section
-            class="bg-slate-700 h-screen w-full flex justify-center items-center opacity-0 translate-y-5 transition duration-1000 ease-out delay-300">
+            id="section-2" class="h-screen w-full flex justify-center items-center opacity-0 translate-y-5 transition duration-1000 ease-out delay-300">
             <div
                 class="fade-in w-full h-[80vh] flex flex-col md:flex-row justify-evenly items-center opacity-0 translate-y-5 transition duration-1000 ease-out delay-500">
                 <h1 class="my-project text-4xl md:text-5xl text-white absolute top-1 font-mono ">About Me</h1>
 
                 <div class="h-[40%] md:h-[60%] mt-8 md:mt-0">
-                    <img class="h-full rounded-md shadow-[0_0_44px_0_rgba(0,0,0,0.5)]" src="./assets/profile.JPG"
+                    <img class="h-full rounded-[200px] shadow-[0_0_88px_0_rgba(55,31,85,1)]" src="./assets/profile.JPG"
                         alt="">
                 </div>
 
@@ -73,9 +73,9 @@
                     <h1 class="text-white text-sm md:text-lg">Bermain game, mendengarkan musik, dan travelling <br>
                         adalah cara saya melarikan diri dari hiruk pikuk produktivitas <br> yang kadang kala membuat
                         saya lupa akan banyak hal lain yang masih bisa di-explore</h1>
-                    <button
+                    <!-- <button
                         class="text-black bg-white mt-2 p-2 rounded-md hover:text-white hover:bg-black transition delay-50 duration-150 ease-in-out">Lihat
-                        Selengkapnya</button>
+                        Selengkapnya</button> -->
                 </div>
             </div>
         </section>
@@ -84,10 +84,11 @@
 
         <!-- Section 3 Start -->
         <section
-            class="section-3 h-[120vh] bg-slate-900 w-[100vw] opacity-0 translate-y-5 transition duration-1000 ease-out delay-300">
+        id="section-3"
+            class="flex items-center justify-center section-3 h-[120vh] w-[100vw] opacity-0 translate-y-5 transition duration-1000 ease-out delay-300">
 
             <div
-                class=" fade-in w-full h-[80vh] flex flex-col mt-[20vh] md:mt-[12vh] gap-5 justify-center items-center opacity-0 translate-y-5 transition duration-1000 ease-out delay-500">
+                class=" fade-in w-[80vw] h-[80vh] flex flex-col  gap-5 justify-center items-center opacity-0 translate-y-5 transition duration-1000 ease-out delay-500">
                 <div>
 
                     <h1 class="my-project text-4xl md:text-5xl text-white text-center mt-4 font-mono">
@@ -97,28 +98,19 @@
 
                     <div
                         class="flex flex-col justify-center items-center h-[30vh] md:h-[60vh] w-[60vw] md:w-[30vw] rounded-md ">
-                        <div class="h-[45%] w-full flex justify-center items-center">
-                            <a href="https://bagussyahrijal.github.io/buatmamah/" target="_blank"><img class="object-contain w-full hover:scale-105 transition-all rounded-md shadow-[0_0_44px_0_rgba(0,0,0,0.5)]" src="./assets/img-project-1.png" alt=""></a>
+                        <div class=" w-full flex justify-center items-center">
+                            <a href="https://bagussyahrijal.github.io/buatmamah/" target="_blank"><img class="h-[30vh] object-cover w-full hover:scale-105 transition-all rounded-md shadow-[0_0_44px_0_rgba(0,0,0,0.5)]" src="./assets/img-project-1.png" alt=""></a>
                         </div>
                         <a href="https://bagussyahrijal.github.io/buatmamah/" target="_blank" class="text-xl text-white text-center hover:text-blue-500 transition delay-50 duration-150 ease-in-out mt-3">Birthday Project</a>
                     </div>
                     <div
                         class="flex flex-col justify-center items-center h-[30vh] md:h-[60vh] w-[60vw] md:w-[30vw] rounded-md ">
-                        <div class="h-[45%] w-full flex justify-center items-center">
-                            <a href="https://revou-fundamental-course.github.io/22-jul-24-bagussyahrijal/" target="_blank"><img class="object-contain w-full hover:scale-105 transition-all rounded-md shadow-[0_0_44px_0_rgba(0,0,0,0.5)]" src="./assets/img-project2.png" alt=""></a>
+                        <div class="w-full flex justify-center items-center">
+                            <a href="https://revou-fundamental-course.github.io/22-jul-24-bagussyahrijal/" target="_blank"><img class="h-[30vh] object-cover w-full hover:scale-105 transition-all rounded-md shadow-[0_0_44px_0_rgba(0,0,0,0.5)]" src="./assets/img-project2.png" alt=""></a>
                         </div>
-                        <a href="https://revou-fundamental-course.github.io/22-jul-24-bagussyahrijal/" target="_blank" class="text-xl text-white text-center hover:text-blue-500 transition delay-50 duration-150 ease-in-out">Travel Project</a>
+                        <a href="https://revou-fundamental-course.github.io/22-jul-24-bagussyahrijal/" target="_blank" class="text-xl text-white text-center hover:text-blue-500 transition delay-50 duration-150 ease-in-out mt-3">Travel Project</a>
                     </div>
-                    <div
-                        class="flex flex-col justify-center items-center h-[30vh] md:h-[60vh] w-[60vw] md:w-[30vw] rounded-md ">
-                        <div class="h-[45%] w-full flex justify-center items-center">
-                            <a href="https://bagussyahrijal.github.io/buatmamah/" target="_blank"><img class="object-contain w-full hover:scale-105 transition-all rounded-md shadow-[0_0_44px_0_rgba(0,0,0,0.5)]" src="./assets/img-project-1.png" alt=""></a>
-                        </div>
-                        <a href="https://bagussyahrijal.github.io/buatmamah/" target="_blank" class="text-xl text-white text-center hover:text-blue-500 transition delay-50 duration-150 ease-in-out">Birthday Project</a>
-                    </div>
-
                 </div>
-
             </div>
         </section>
         <!-- Section 3 Done -->

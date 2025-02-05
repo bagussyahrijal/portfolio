@@ -1,3 +1,20 @@
+@keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .animate-gradient {
+    background-size: 200% 200%;
+    animation: gradientAnimation 5s ease infinite;
+  }
+
 ::-webkit-scrollbar {
     width: 2px;
 }
@@ -31,9 +48,46 @@ body{
     -o-transition: 0.3s ease-in-out;
 }
 
-.section-1{
-    background: linear-gradient(to top, rgba(51, 65, 85, 1) 1%, rgba(15, 23, 42, 1)10%);
+
+.a-navbar {
+  text-decoration: none;
+  position: relative;
 }
+
+.a-navbar::after {
+
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  height: 2px;
+  width: 100%;
+  background-color: #ffffff;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.a-navbar.underlines::after {
+  transform: scaleX(1); 
+}
+
+:hover.a-navbar{
+    cursor: pointer;
+}
+
+.li-navbar{
+  display: inline;
+}
+
+/* .section-1{
+    background: linear-gradient(to top, rgba(51, 65, 85, 1) 1%, rgba(15, 23, 42, 1)10%);
+} */
 
 .fade-in {
     opacity: 0;
@@ -43,6 +97,10 @@ body{
     -moz-transform: translateY(20px);
     -ms-transform: translateY(20px);
     -o-transform: translateY(20px);
+    -webkit-transition: opacity 0.5s ease, transform 0.5s ease;
+    -moz-transition: opacity 0.5s ease, transform 0.5s ease;
+    -ms-transition: opacity 0.5s ease, transform 0.5s ease;
+    -o-transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 .fade-in.visible {
@@ -50,10 +108,24 @@ body{
     transform: translateY(0);
 }
 
-.section-3{
+.fade-in.invisible{
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    -webkit-transform: translateY(20px);
+    -moz-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    -o-transform: translateY(20px);
+    -webkit-transition: opacity 0.5s ease, transform 0.5s ease;
+    -moz-transition: opacity 0.5s ease, transform 0.5s ease;
+    -ms-transition: opacity 0.5s ease, transform 0.5s ease;
+    -o-transition: opacity 0.5s ease, transform 0.5s ease;
+    opacity: 0;
+}
+
+/* .section-3{
     background: linear-gradient(to bottom, rgba(51, 65, 85, 1)1%, rgba(15, 23, 42, 1) 10%);
    
-}
+} */
 
 /* .about-me {
     padding: 0.5rem;
@@ -90,3 +162,12 @@ body{
     background-position: left;
     cursor: default;
   }
+
+.cursor {
+    animation: blink 0.7s infinite;
+}
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+    }
