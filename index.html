@@ -12,12 +12,14 @@
 <body class="animate-gradient bg-gradient-to-r from-slate-900 via-slate-800 to-slate-700">
     <!-- Navbar Start -->
     <header>
-        <nav class="navbar-container fixed h-[10vh] bg-slate-900 w-full">
+        <nav class="navbar-container fixed h-[80px] bg-slate-900 w-full">
             <div class="flex justify-start ml-24 items-center h-full">
                 <ul class="text-white">
                     <li class="mx-2 li-navbar"><a class="a-navbar" id="a-navbar" href="#">Home</a></li>
-                    <li class="mx-2 li-navbar"><a class="a-navbar" id="a-navbar" onclick="scrollToWhere('section-2')">About Me</a></li>
-                    <li class="mx-2 li-navbar"><a class="a-navbar" id="a-navbar" onclick="scrollToWhere('section-3')">Portfolio</a></li>
+                    <li class="mx-2 li-navbar"><a class="a-navbar" id="a-navbar"
+                            onclick="scrollToWhere('section-2')">About Me</a></li>
+                    <li class="mx-2 li-navbar"><a class="a-navbar" id="a-navbar"
+                            onclick="scrollToWhere('section-3')">Portfolio</a></li>
                 </ul>
             </div>
         </nav>
@@ -29,14 +31,15 @@
 
         <!-- Section 1 Start -->
         <section
-            class=" section-1 flex flex-col justify-center items-center w-[100vw] h-[110vh] opacity-0 translate-y-5 transition duration-1000 ease-out delay-300">
+            class="section-1 flex flex-col justify-center items-center w-[1366px] h-[845px] opacity-0 translate-y-5 transition duration-1000 ease-out delay-300">
             <div
                 class="flex flex-col items-center justify-center opacity-0 translate-y-5 transition duration-1000 ease-out delay-400">
                 <h1 id="color-effect"
                     class="h1-section1 font-mono text-4xl md:text-5xl text-white text-center drop-shadow-[0_0_30px_rgba(255,255,255,1)]">
                     Hi, I
                     Am Tubagus Syahrijal Amri <br> You can call me Tebe.</h1>
-                <p id="typing-effect" class="font-mono text-white text-center mt-2 drop-shadow-[0_0_30px_rgba(255,255,255,1)]"></p>
+                <p id="typing-effect"
+                    class="font-mono text-white text-center mt-2 drop-shadow-[0_0_30px_rgba(255,255,255,1)]"></p>
             </div>
             <div class="flex flex-row gap-5 mt-7 opacity-0 translate-y-5 transition duration-1000 ease-out delay-500">
                 <img class="h-10" src="./assets/html.svg" alt="HTML">
@@ -49,17 +52,20 @@
                 <img class="h-10 mt-1" src="./assets/laravel.svg" alt="LARAVEL">
             </div>
             <div class="mt-7 opacity-0 translate-y-5 transition duration-1000 ease-out delay-600">
-                <a onclick="scrollToWhere('section-3')" class="a-navbar text-white hover:text-blue-500 transition delay-50 duration-150 ease-in-out">--&rarr;
+                <a onclick="scrollToWhere('section-3')"
+                    class="a-navbar text-white hover:text-blue-500 transition delay-50 duration-150 ease-in-out">--&rarr;
                     <span class="underline underline-offset-1">See my project</span></a>
-                <a onclick="scrollToWhere('section-2')" class="a-navbar text-white hover:text-blue-500 transition delay-50 duration-150 ease-in-out">--&rarr;
+                <a onclick="scrollToWhere('section-2')"
+                    class="a-navbar text-white hover:text-blue-500 transition delay-50 duration-150 ease-in-out">--&rarr;
                     <span class="underline underline-offset-1">About Me</span></a>
             </div>
         </section>
+
         <!-- Section 1 Done -->
 
         <!-- Section 2 Start -->
-        <section
-            id="section-2" class="h-screen w-full flex justify-center items-center opacity-0 translate-y-5 transition duration-1000 ease-out delay-300">
+        <section id="section-2"
+            class="h-screen w-full flex justify-center items-center opacity-0 translate-y-5 transition duration-1000 ease-out delay-300">
             <div
                 class="fade-in w-full h-[80vh] flex flex-col md:flex-row justify-evenly items-center opacity-0 translate-y-5 transition duration-1000 ease-out delay-500">
                 <h1 class="my-project text-4xl md:text-5xl text-white absolute top-1 font-mono ">About Me</h1>
@@ -83,60 +89,97 @@
         <!-- Section 2 Done -->
 
         <!-- Section 3 Start -->
-        <section
-        id="section-3"
-            class="flex items-center justify-center section-3 h-[120vh] w-[100vw] opacity-0 translate-y-5 transition duration-1000 ease-out delay-300">
-
-            <div
-                class=" fade-in w-[80vw] h-[80vh] flex flex-col  gap-5 justify-center items-center opacity-0 translate-y-5 transition duration-1000 ease-out delay-500">
-                <div>
-
-                    <h1 class="my-project text-4xl md:text-5xl text-white text-center mt-4 font-mono">
-                        My Project</h1>
-                </div>
-                <div class="flex flex-col md:flex-row justify-center items-center gap-5">
-
-                    <div
-                        class="flex flex-col justify-center items-center h-[30vh] md:h-[60vh] w-[60vw] md:w-[30vw] rounded-md ">
-                        <div class=" w-full flex justify-center items-center">
-                            <a href="https://bagussyahrijal.github.io/buatmamah/" target="_blank"><img class="h-[30vh] object-cover w-full hover:scale-105 transition-all rounded-md shadow-[0_0_44px_0_rgba(0,0,0,0.5)]" src="./assets/img-project-1.png" alt=""></a>
+        <section id="section-3"
+        class="flex items-center justify-center section-3 opacity-0 translate-y-5 transition duration-1000 ease-out delay-300">
+    
+        <div
+            class="fade-in w-[1366px] flex flex-col gap-5 justify-center items-center opacity-0 translate-y-5 transition duration-1000 ease-out delay-500">
+            <div>
+                <h1 class="my-project text-4xl md:text-5xl text-white text-center mt-4 font-mono">
+                    My Project</h1>
+            </div>
+            <div class="flex flex-col md:flex-row items-center justify-center gap-5">
+                <div
+                    class="flex flex-col mt-10 gap-4 bg-slate-900 px-6 py-6 w-[1298px] rounded-md shadow-[0_0_44px_0_rgba(0,0,0,0.5)]">
+                    <div class="flex flex-row gap-4">
+                        <div class="flex justify-center items-center">
+                            <a href="https://bagussyahrijal.github.io/buatmamah/" target="_blank">
+                                <img class="h-[230px] object-cover hover:scale-105 transition-all rounded-md shadow-[0_0_44px_0_rgba(0,0,0,0.5)]"
+                                    src="./assets/img-project-1.png" alt="">
+                            </a>
                         </div>
-                        <a href="https://bagussyahrijal.github.io/buatmamah/" target="_blank" class="text-xl text-white text-center hover:text-blue-500 transition delay-50 duration-150 ease-in-out mt-3">Birthday Project</a>
-                    </div>
-                    <div
-                        class="flex flex-col justify-center items-center h-[30vh] md:h-[60vh] w-[60vw] md:w-[30vw] rounded-md ">
-                        <div class="w-full flex justify-center items-center">
-                            <a href="https://revou-fundamental-course.github.io/22-jul-24-bagussyahrijal/" target="_blank"><img class="h-[30vh] object-cover w-full hover:scale-105 transition-all rounded-md shadow-[0_0_44px_0_rgba(0,0,0,0.5)]" src="./assets/img-project2.png" alt=""></a>
+                        <div class="flex flex-col self-center justify-around">
+                            <a href="https://bagussyahrijal.github.io/buatmamah/" target="_blank"
+                                class="text-5xl whitespace-nowrap text-white text-center hover:text-blue-500 transition delay-50 duration-150 ease-in-out">Birthday
+                                Project</a>
+                            <p class="text-slate-300">using:</p>
+                            <div
+                                class="py-4 flex flex-row gap-4 mt-3 bg-slate-700 justify-center rounded-md border-[0.5px] border-white">
+                                <img class="h-10" src="./assets/html.svg" alt="HTML">
+                                <img class="h-10" src="./assets/css.svg" alt="CSS">
+                                <img class="h-10" src="./assets/js.svg" alt="JS">
+                            </div>
                         </div>
-                        <a href="https://revou-fundamental-course.github.io/22-jul-24-bagussyahrijal/" target="_blank" class="text-xl text-white text-center hover:text-blue-500 transition delay-50 duration-150 ease-in-out mt-3">Travel Project</a>
+                        <p class="ml-auto text-sm text-white">SELF-INITIATED PROJECT</p>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- Section 3 Done -->
+            <div class="flex flex-col md:flex-row items-center justify-center gap-5 mb-10">
+                <div
+                    class="flex flex-col mt-10 gap-4 bg-slate-900 px-6 py-6 w-[1298px] rounded-md shadow-[0_0_44px_0_rgba(0,0,0,0.5)]">
+                    <div class="flex flex-row-reverse gap-4">
+                        <div class="flex justify-center items-center">
+                            <a href="https://bagussyahrijal.github.io/buatmamah/" target="_blank">
+                                <img class="h-[200px] object-cover hover:scale-105 transition-all rounded-md shadow-[0_0_44px_0_rgba(0,0,0,0.5)]"
+                                    src="./assets/img-project2.png" alt="">
+                            </a>
+                        </div>
+                        <div class="flex flex-col self-center justify-around">
+                            <a href="https://bagussyahrijal.github.io/buatmamah/" target="_blank"
+                                class="text-5xl whitespace-nowrap text-white text-center hover:text-blue-500 transition delay-50 duration-150 ease-in-out">Travel
+                                Project</a>
+                            <p class="text-slate-300 text-right">using:</p>
+                            <div
+                                class="py-4 flex flex-row gap-4 mt-3 bg-slate-700 justify-center rounded-md border-[0.5px] border-white">
+                                <img class="h-10" src="./assets/html.svg" alt="HTML">
+                                <img class="h-10" src="./assets/css.svg" alt="CSS">
+                                <img class="h-10" src="./assets/js.svg" alt="JS">
+                            </div>
+                        </div>
+                        <p class="mr-auto text-sm text-white">PROJECT BASED LEARNING</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+            <!-- Section 3 Done -->
 
     </main>
     <!-- Main Done -->
 
     <!-- Footer Start -->
-    <footer class="bg-slate-700 h-[30vh] flex justify-center items-center relative">
-        <div class="absolute top-5 hover:top-4 transition-all duration-300 ">
-            <a href="#top" class=""><img class="h-10" src="./assets/arrow.svg" alt=""></a>
+    <footer class="bg-slate-700 h-[230px] flex justify-center items-center relative">
+        <div class="absolute top-5 hover:top-4 transition-all duration-300">
+            <a href="#top"><img class="h-10" src="./assets/arrow.svg" alt=""></a>
         </div>
-        <div class="h-[80%] w-[50%] flex justify-center items-center  ">
+        <div class="h-[184px] w-[683px] flex justify-center items-center">
             <div class="flex flex-row gap-10">
-                <a href="https://github.com/bagussyahrijal" target="_blank"><img class="h-10 mt-3.5 md:mt-0.5"
-                        src="./assets/github.svg" alt=""></a>
-                <a href="https://wa.me/6281388692011" target="_blank"><img class="h-10 mt-1" src="./assets/whatsapp.svg"
-                        alt=""></a>
-                <a href="https://www.linkedin.com/in/tubagus-syahrijal-amri-9b912a2a0/" target="_blank"><img
-                        class="h-10 mt-0.5" src="./assets/linkedin.svg" alt=""></a>
-                <a href="https://instagram.com/bagussyahrijal" target="_blank"><img class="h-10 mt-1"
-                        src="./assets/instagram.svg" alt=""></a>
+                <a href="https://github.com/bagussyahrijal" target="_blank">
+                    <img class="h-10 mt-3.5 md:mt-0.5" src="./assets/github.svg" alt="">
+                </a>
+                <a href="https://wa.me/6281388692011" target="_blank">
+                    <img class="h-10 mt-1" src="./assets/whatsapp.svg" alt="">
+                </a>
+                <a href="https://www.linkedin.com/in/tubagus-syahrijal-amri-9b912a2a0/" target="_blank">
+                    <img class="h-10 mt-0.5" src="./assets/linkedin.svg" alt="">
+                </a>
+                <a href="https://instagram.com/bagussyahrijal" target="_blank">
+                    <img class="h-10 mt-1" src="./assets/instagram.svg" alt="">
+                </a>
             </div>
         </div>
     </footer>
-    <!-- Footer Done -->
+        <!-- Footer Done -->
     <script src="./script/script.js"></script>
 </body>
 
